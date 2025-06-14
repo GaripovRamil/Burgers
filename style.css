@@ -1,84 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-/*- Общие стили(для body) */
+
+/* Общие стили - body */
+
 body {
-  margin: 0;
   font-family: "Roboto", sans-serif;
   background-color: #1c1c1c;
-  color: #fff;
+  color: #ffffff;
 }
 
 a {
-  color: #fff;
+  color: #ffffff; /* убрали подчеркивание текста + задали цвет текста*/
   text-decoration: none;
 }
 
 ul {
-  list-style: none;
+  list-style: none; /* убрали точки по умолчанию */
   padding: 0;
   margin: 0;
 }
 
 .container {
-  max-width: 1140px;
-  margin-right: auto;
+  max-width: 1140px; /* Ширина контейнера + выровнили по центру*/
   margin-left: auto;
-  padding: 0 15px;
+  margin-right: auto;
+  padding: 0 15px; /*Отступы при изменении ширины экрана */
 }
 
 .btn {
-  display: flex;
+  display: flex; /* Выровнили кнопку по центру в области кнопки*/
   align-items: center;
   justify-content: center;
 
-  width: 165px;
+  width: 165px; /* Задали общую область кнопки */
   height: 50px;
+  text-transform: uppercase; /* Сделали текст КАПСОМ*/
 
-  font-weight: 500;
+  font-weight: 500; /* Жирность текста + размер */
   font-size: 16px;
-  text-transform: uppercase;
 
-  background: orange;
-  border-radius: 5px;
-
+  background-color: #f6762c;
+  border-radius: 5px; /* Сглаживание углов в области кнопки*/
   transition: opacity 0.3s;
 }
 
 .btn:hover {
-  opacity: 0.8;
+  opacity: 0.8; /*При наведении на кнопку становиться прозрачной = :hover*/
 }
-/*- Шапка */
+
+/* Шапка */
 .header {
-  padding: 25px 0;
-  position: relative;
+  padding: 25px 0; /* отступ шапки сверху */
 }
 
 .header .container {
-  display: flex;
+  display: flex; /* Выровнили элементы в шапке */
   justify-content: space-between;
   align-items: center;
 }
 
-.header__logo {
+/* .header__logo {
 }
 
 .header__nav {
-}
+} */
 
 .header__list {
-  display: flex;
-  gap: 30px;
+  display: flex; /* Сделали текст(кнопки) горизонтально + отступы между кнопками */
+  gap: 28px;
 }
 
 .header__nav a {
-  font-size: 14px;
+  font-size: 14px; /* Размер текста кнопок+прозрачность */
   opacity: 0.7;
   transition: opacity 0.3s;
 }
 
 .header__nav a.active {
-  opacity: 1;
+  opacity: 1; /* Выделение активной кнопки*/
 }
 
 .header__nav a:hover {
-  opacity: 0.9;
+  opacity: 0.9; /* При наведении на кнопку становиться прозрачной = :hover */
 }
